@@ -32,12 +32,11 @@ function App() {
       setResults(url);
     };
     request();
-  }, []);
+  }, [pokemonURL]);
 
   return (
     <div>
       {results.map((pokemon) => {
-        console.log("id: ", pokemon.id);
         return (
           <Card
             key={pokemon.id}

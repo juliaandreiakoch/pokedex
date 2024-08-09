@@ -45,10 +45,7 @@ export default function OutlinedCard({
     if (isOpen) {
       request();
     }
-  }, [isOpen]);
-
-  console.log("ABILITY TEST: ", abilityResults);
-  console.log("CHAMADA ", pokemonAbilityRequest("2"));
+  }, [isOpen, id]);
 
   return (
     <Flex alignItems="center" justifyContent="center">
